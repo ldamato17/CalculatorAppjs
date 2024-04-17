@@ -1,0 +1,32 @@
+
+
+h1{
+    color:blue;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input{
+    background-color:blueviolet;
+    color: white;
+    text-align: right;
+    border-radius: 5px;
+}
+
+input[type="button"]{
+    width: 40px;
+    height: 40px;
+    background-color:darkmagenta;
+    text-align: center;
+    color: white;
+    border-radius: 40px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Online</title>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="calc">
+            <div class="display">
+                <input text="text" id="display" placeholder="0">
+            </div>
+            <br>
+            <div class="bdy">
+                <div class="riga1">
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="CE" onclick="backspace()">
+                    <input type="button" value="%" onclick="percent()">
+                    <input type="button" value="/" onclick="divide()">
+                </div>
+                <div class="riga2">
+                    <input type="button" value="7" onclick="addValueToDisplay('7')">
+                    <input type="button" value="8" onclick="addValueToDisplay('8')">
+                    <input type="button" value="9" onclick="addValueToDisplay('9')">
+                    <input type="button" value="*" onclick="multiply()">
+                </div>
+                <div class="riga3">
+                    <input type="button" value="4" onclick="addValueToDisplay('4')">
+                    <input type="button" value="5" onclick="addValueToDisplay('5')">
+                    <input type="button" value="6" onclick="addValueToDisplay('6')">
+                    <input type="button" value="-" onclick="minus()">
+                </div>
+                <div class="riga4">
+                    <input type="button" value="1" onclick="addValueToDisplay('1')">
+                    <input type="button" value="2" onclick="addValueToDisplay('2')">
+                    <input type="button" value="3" onclick="addValueToDisplay('3')">
+                    <input type="button" value="+" onclick="plus()">
+                </div>
+                <div class="riga5">
+                    <input type="button" value="00" onclick="addValueToDisplay('00')">
+                    <input type="button" value="0" onclick="addValueToDisplay('0')">
+                    <input type="button" value="." onclick="addValueToDisplay('.')">
+                    <input type="button" value="=" onclick="calculate()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
