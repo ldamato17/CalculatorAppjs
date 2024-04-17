@@ -1,44 +1,44 @@
 var valoreDisplay = '0'; // definisci e inizializza la variabile
 
-function divide(){
-    valoreDisplay+='/';
-    aggiornaDisplay();
+function divide(){                           //funzione divide
+    valoreDisplay+='/';                     //prende il valore del display e aggiunge il simbolo /
+    aggiornaDisplay();                      //richiama la funzione aggiornaDisplay
 }
 
-function multiply(){
-    valoreDisplay+='*';
-    aggiornaDisplay();
+function multiply(){                      //funzione multiply
+    valoreDisplay+='*';                   //prende il valore del display e aggiunge il simbolo *
+    aggiornaDisplay();                   //richiama la funzione aggiornaDisplay
 }
 
-function minus(){
-    valoreDisplay+='-';
-    aggiornaDisplay();
+function minus(){                        //funzione minus
+    valoreDisplay+='-';                 //prende il valore del display e aggiunge il simbolo -
+    aggiornaDisplay();                  //richiama la funzione aggiornaDisplay
 }
 
-function plus(){
-    valoreDisplay+='+';
-    aggiornaDisplay();
+function plus(){                        //funzione plus
+    valoreDisplay+='+';                 //prende il valore del display e aggiunge il simbolo +
+    aggiornaDisplay();                 //richiama la funzione aggiornaDisplay
 }
 
-function backspace(){
-    valoreDisplay = valoreDisplay.slice(0, -1);
-    aggiornaDisplay();
+function backspace(){                                //funzione backspace
+    valoreDisplay = valoreDisplay.slice(0, -1);      //prende il valore del display e lo taglia di un carattere
+    aggiornaDisplay();                              //richiama la funzione aggiornaDisplay
 }
 
-function percent(){
-    valoreDisplay = parseFloat(valoreDisplay) / 100;
-    aggiornaDisplay();
+function percent(){                                         //funzione percent
+    valoreDisplay = parseFloat(valoreDisplay) / 100;        //prende il valore del display e lo divide per 100
+    aggiornaDisplay();                                     //richiama la funzione aggiornaDisplay
 }
 
-function clearDisplay(){
-    valoreDisplay='';
-    aggiornaDisplay();
+function clearDisplay(){                    //funzione clearDisplay
+    valoreDisplay='';                      //azzera il valore del display
+    aggiornaDisplay();                     //richiama la funzione aggiornaDisplay
 }
 
-function calculate() {
-    try {
-        valoreDisplay = eval(valoreDisplay);
-        aggiornaDisplay();
+function calculate() {                              //funzione calculate
+    try {                                             
+        valoreDisplay = eval(valoreDisplay);          //prende il valore del display e lo calcola
+        aggiornaDisplay();                            //richiama la funzione aggiornaDisplay
     } catch (error) {
         valoreDisplay = 'Error';
         aggiornaDisplay();
@@ -46,15 +46,15 @@ function calculate() {
 }
 
 function aggiornaDisplay() {
-    var displayElement = document.getElementById('display');
-    displayElement.value = valoreDisplay;
+    var displayElement = document.getElementById('display');   //prende l'elemento con id display
+    displayElement.value = valoreDisplay;                      //assegna il valore del display all'elemento
 }
 
-function addValueToDisplay(value) {
-    if(valoreDisplay === '0') {
-        valoreDisplay = value;
-    } else{
-        valoreDisplay += value;
+function addValueToDisplay(value) {            //funzione addValueToDisplay
+    if(valoreDisplay === '0') {                //se il valore del display è 0
+        valoreDisplay = value;                 //assegna il valore al display
+    } else{                                    //altrimenti
+        valoreDisplay += value;               //aggiungi il valore al display
     }
-    aggiornaDisplay();
+    aggiornaDisplay();                         //richiama la funzione aggiornaDisplay
 }
