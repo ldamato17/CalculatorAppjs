@@ -1,4 +1,4 @@
-var valoreDisplay = '0'; // definisci e inizializza la variabile
+var valoreDisplay = '0';
 
 function divide(){                           //funzione divide
     valoreDisplay+='/';                     //prende il valore del display e aggiunge il simbolo /
